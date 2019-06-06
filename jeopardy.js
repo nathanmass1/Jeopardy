@@ -9,7 +9,7 @@ $(function () {
     let question = getQuestion();
 
     async function getQuestion() {
-        let apiURL = `//jservice.io/api/random`;
+        let apiURL = `http://jservice.io/api/random`;
         let results = await $.get(apiURL);
 
         setTimeout(function(){ 
