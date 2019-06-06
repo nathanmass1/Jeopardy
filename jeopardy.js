@@ -21,8 +21,6 @@ $(function () {
                 id: result.id,
                 question: result.question,
                 answer: result.answer
-
-                //ternary operator ...
             };
         });
         showQuestion(questions);
