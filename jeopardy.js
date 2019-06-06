@@ -66,7 +66,6 @@ $(function () {
         }
     }
 
-
     $(".btn-success").on("click", function (evt) {
         evt.preventDefault();
 
