@@ -1,0 +1,48 @@
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 36px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(rgb(247, 211, 7), rgb(253, 0, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body {
+    background-color: rgb(195, 219, 226)
+
+}
+
+.container {
+    display: block;
+    position: absolute;
+    /* width: auto; */
+    margin-left: 30%;
+}
+
+
+img {
+    border-radius: 20px;
+  }
+
+.imageText {
+    position: fixed;
+    left: 32%;
+    top: 5%;
+    /* transform: translate(-50%, -50%); */
+    color: white;
+}
+
+.btn-primary {
+    position: absolute;
+    left: 11%;
+}
+
+.btn-success {
+    position: relative;
+    left: 28%;
+}
+
+.hidden-buttons {
+    display: none;
+}
+
