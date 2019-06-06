@@ -1,19 +1,12 @@
 $(function () {
-
-
+    
     const $questionDiv = $('.mainQuestion');
     const $answerDiv = $('.mainAnswer');
     const $hiddenButtons = $('.hidden-buttons');
 
     console.log("ready");
 
-    // let $query = "dogs";
-    // console.log($query);
     let question = getQuestion();
-    // $("form").trigger("reset");
-    // showGif(gif)
-
-
 
     async function getQuestion() {
         let apiURL = `//jservice.io/api/random`;
@@ -21,13 +14,6 @@ $(function () {
 
         setTimeout(function(){ 
             $hiddenButtons.css("display", "block"); }, 500);
-
-
-        // 
-
-        // console.log(res.data[0].images.original.url);
-
-        // return ;
 
         let questions = results.map(result => {
 
@@ -39,14 +25,8 @@ $(function () {
                 //ternary operator ...
             };
         });
-        console.log(questions);
-        console.log(questions.id);
-        console.log(results.id);
         showQuestion(questions);
         showAnswer(questions);
-
-
-
 
     }
 
@@ -97,52 +77,4 @@ $(function () {
         getQuestion();
 
     });
-
-
-    // function newQuestion {
-
-    //     could just be to clear out both divs and call new question
-    // }
-
-
-
-
-    // // Pull question answer from API
-    //  async function getQuestion() {
-    //     let apiURL = `http://api.giphy.com/v1/gifs/search?q=dogs&api_key=dc6zaTOxFJmzC`;
-    //     let results =  await $.get(apiURL, function (res) {
-    //         console.log(Hi);
-    //         console.log(results);
-
-    //         showQuestion(res.data[0].images.original.url)
-    //         // console.log(res.data[0].images.original.url);
-
-    //         // return ;
-
-
-    //     })
-    // }
-
-    // async function getAnswer () {
-
-    // }
-    // console.log(Hi);
-
-
-    // //show question on page
-    // function showQuestion(imgLink) {
-    //     let question = $(
-    //         `<div class="col-md-4">
-    //             <div>
-    //                 <img src="${imgLink}" alt="">
-    //             </div>
-    //         </div>`
-    //     )
-    //     $questionDiv.append(question);
-    // }
-
-
-
-
-
 });
