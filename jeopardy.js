@@ -28,7 +28,7 @@ $(function () {
         showQuestion(questions);
         showAnswer(questions);
 
-    }
+    };
 
     function showQuestion(questions) {
         for (let question of questions) {
